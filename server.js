@@ -1,7 +1,7 @@
 // Expres
 const app = require('express')();
 const server = require('http').Server(app);
-const port = process.env.PORT || 3000;
+const port = parseInt(process.env.PORT || 3000, 10);
 
 // Socket.io
 const socketio = require('socket.io');
@@ -41,8 +41,6 @@ nextApp.prepare().then(() => {
   server.listen(port, err => {
     if (err) throw err;
 
-    console.log(
-      `> Ready on https://localhost:${port} / http://localhost:${port}`
-    );
+    console.log(`> Ready on http://localhost:${port}`);
   });
 });
