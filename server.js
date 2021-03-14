@@ -12,7 +12,7 @@ const dev = process.env.NODE_ENV !== 'production';
 const nextApp = next({ dev });
 const nextHandler = nextApp.getRequestHandler();
 
-io.on('connect', socket => {
+io.on('connection', socket => {
   socket.on('message', ({ room, user, message }) => {
     if (!room) {
       throw new Error('[message] Room is missing');
