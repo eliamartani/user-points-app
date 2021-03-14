@@ -1,7 +1,12 @@
 {
   "name": "user-points",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.1.1",
+  "private": false,
+  "license": "MIT",
+  "author": {
+    "name": "Eliamar Tani",
+    "email": "eliamartani@gmail.com"
+  },
   "scripts": {
     "build": "next build",
     "start": "node server.js"
