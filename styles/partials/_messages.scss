@@ -1,0 +1,32 @@
+.messages {
+  flex: auto;
+  height: calc(100vh - 60px);
+  overflow: auto;
+  padding: 2rem 0 0;
+
+  h1 {
+    color: var(--title-color);
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 0 1rem 1rem;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0 1rem 2rem;
+    padding: 0;
+
+    li {
+      color: var(--palette-secondary);
+      font-size: 2rem;
+      position: relative;
+
+      &::before {
+        color: var(--palette-tertiary);
+        content: attr(data-title);
+        font-size: 1.5rem;
+        font-weight: normal;
+      }
+    }
+  }
+}

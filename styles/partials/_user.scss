@@ -1,0 +1,39 @@
+.user {
+  --input-width: 30rem;
+
+  align-items: center;
+  background: var(--palette-quinary);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  min-height: 100px;
+
+  input {
+    background: var(--palette-quinary);
+    border: 0;
+    border-bottom: 2px var(--palette-secondary) solid;
+    border-radius: 0;
+    color: var(--palette-secondary);
+    font-size: 3rem;
+    outline: none;
+    padding: 10px 0;
+    position: relative;
+    width: var(--input-width);
+
+    &::placeholder {
+      color: var(--palette-secondary);
+    }
+
+    &::-moz-placeholder {
+      color: var(--palette-secondary);
+      opacity: 1;
+    }
+  }
+
+  span {
+    color: var(--palette-tertiary);
+    font-size: 1.5rem;
+    width: var(--input-width);
+  }
+}
