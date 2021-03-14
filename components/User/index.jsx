@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react';
 import Head from 'next/head';
 
 // utils
-import { keyCodes, title } from '../utils/constants';
+import { keyCodes, title } from '../../utils/constants';
 
 const labels = {
   hint: 'and press enter',
